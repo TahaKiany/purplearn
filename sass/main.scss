@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "iransans";
+    src: url("./IRANSans/WebFonts/fonts/ttf/IRANSansWeb.ttf") format("truetype"), url("./IRANSans/WebFonts/fonts/woff/IRANSansWeb.woff") format("woff");
+}
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+}
+body {
+    font-size: 14px;
+    text-align: right;
+    direction: rtl;
+    line-height: 30px;
+    background-color: #eee;
+    font-family: "iransans";
+    animation-name: body;
+    animation-duration: 1s;
+}
+@keyframes body{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+figure{
+    line-height: 0;
+}
+.my-container{
+    width: 90%;
+    margin: auto;
+}
+.stick{
+    background-color: #ddd;
+    height: 2px;
+    width: 100%;
+    margin: 40px 0px;
+}
+.flex{
+    display: flex;
+}
+@import"imports.scss";

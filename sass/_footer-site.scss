@@ -1,0 +1,150 @@
+.footer{
+    min-height: 400px;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 20px;
+    background-size: 100% 200px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    //new styles
+    background-color: rgba(68, 68, 68);
+    .footers{
+        margin: 0;
+        padding: 20px 15px;
+        >div{
+            margin: 5px 0px;
+        }
+        .about,.foot-nav,.about-me,.trust{
+            .head{
+                h3{
+                    border-bottom: 1px solid $hover-color;
+                    padding-bottom: 10px;
+                    font-size: $title-size;
+                    color: #fff;
+                }
+                margin-bottom: 10px;
+            }
+            .content{
+                p{
+                    font-size: 16px;
+                    color: #f1f1f1;
+                    text-align: justify;
+                }
+                ul{
+                    display: flex;
+                    flex-flow: row wrap;
+                    margin: 0px;
+                    padding: 10px;
+                    justify-content: center;
+                    li{
+                        width: calc(33% - 10px);
+                        margin: 5px 5px;
+                        text-align: center;
+                        transition: .5s;
+                        border-radius: 5px;
+                        background-color: #fff;
+                        list-style-type: none;
+                        &:hover{
+                            background-color: $hover-color;
+                            a{
+                                color: white;
+                            }
+                        }
+                        a{
+                            padding: 10px 0px;
+                            text-decoration: none;
+                            font-size: 18px;
+                            display: block;
+                            color: #444;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            transition: .5s;
+                        }
+                    }
+                }
+                .images{
+                    .image{
+                        figure{
+                            width: 100%;
+                            margin: 0px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .social-media{
+            .head{
+                h3{
+                    border-bottom: 1px solid $hover-color;
+                    padding-bottom: 10px;
+                    color: #fff;
+                    font-size: $title-size;
+                }
+                margin-bottom: 10px;
+            }
+            .content{
+                ul{
+                    padding: 10px;
+                    margin: 0px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    li{
+                        list-style-type: none;
+                        a{
+                            text-decoration: none;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            color: #fff;
+                            transition: .5s;
+                            &.tele{
+                                &:hover{
+                                    color: rgb(72, 174, 214);
+                                }
+                            }
+                            &.inst{
+                                &:hover{
+                                    color: rgb(214, 72, 195);
+                                }
+                            }
+                            &.goog{
+                                &:hover{
+                                    color: rgb(184, 181, 38);
+                                }
+                            }
+                            &.yout{
+                                &:hover{
+                                    color: rgb(218, 42, 42);
+                                }
+                            }
+                            &.yoas{
+                                &:hover{
+                                    color: rgb(102, 51, 197);
+                                }
+                            }
+                            &.twit{
+                                &:hover{
+                                    color: rgb(72, 174, 214);
+                                }
+                            }
+                            i{
+                                font-size: 26px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copy-right{
+        p{
+            margin: 20px 0;
+            font-size: 18px;
+            color: #f1f1f1;
+            padding-right: 40px;
+        }
+    }
+}
