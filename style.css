@@ -1,0 +1,1135 @@
+@font-face {
+  font-family: "iransans";
+  src: url("./IRANSans/WebFonts/fonts/ttf/IRANSansWeb.ttf") format("truetype"), url("./IRANSans/WebFonts/fonts/woff/IRANSansWeb.woff") format("woff");
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  border: 0;
+}
+
+body {
+  font-size: 14px;
+  text-align: right;
+  direction: rtl;
+  line-height: 30px;
+  background-color: #eee;
+  font-family: "iransans";
+  animation-name: body;
+  animation-duration: 1s;
+}
+
+@keyframes body {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+figure {
+  line-height: 0;
+}
+
+.my-container {
+  width: 90%;
+  margin: auto;
+}
+
+.stick {
+  background-color: #ddd;
+  height: 2px;
+  width: 100%;
+  margin: 40px 0px;
+}
+
+.flex {
+  display: flex;
+}
+
+.header {
+  width: 100%;
+  min-height: 697px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header .top-nav {
+  margin: 0px;
+  align-items: center;
+  box-shadow: 1px 1px 10px #222;
+  position: sticky;
+  top: 0;
+}
+.header .top-nav .logo {
+  display: flex;
+  justify-content: center;
+}
+.header .top-nav .logo figure {
+  margin: 0px;
+  width: 100%;
+}
+.header .top-nav .logo figure img {
+  width: 100%;
+}
+.header .top-nav .menu .main-nav {
+  width: 100%;
+  padding: 15px;
+}
+.header .top-nav .menu .main-nav > ul {
+  padding: 0px;
+  margin: 0px;
+}
+.header .top-nav .menu .main-nav > ul > li {
+  list-style-type: none;
+  margin: 0px 3px;
+  display: inline-block;
+  position: relative;
+}
+.header .top-nav .menu .main-nav > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  top: 48px;
+  right: 30px;
+}
+.header .top-nav .menu .main-nav > ul > li > ul {
+  z-index: 1000;
+  position: absolute;
+  width: 250px;
+  border-radius: 5px;
+  padding: 5px 0px;
+  transition: 0.7s;
+  right: -30px;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #994df7;
+  box-shadow: 1px 1px 10px black;
+}
+.header .top-nav .menu .main-nav > ul > li > ul > li {
+  list-style-type: none;
+  transition: 0.5s;
+  padding: 7px;
+  position: relative;
+  margin: 5px 10px;
+}
+.header .top-nav .menu .main-nav > ul > li > ul > li:first-child, .header .top-nav .menu .main-nav > ul > li > ul > li:last-child {
+  margin: 0 10px;
+}
+.header .top-nav .menu .main-nav > ul > li > ul > li::after {
+  background-color: #ffffff;
+  width: 0%;
+  margin-top: 2px;
+  height: 3px;
+  border-radius: 10px;
+  content: "";
+  transition: 0.5s;
+  display: block;
+}
+.header .top-nav .menu .main-nav > ul > li > ul > li:hover::after {
+  display: block;
+  width: 10%;
+}
+.header .top-nav .menu .main-nav > ul > li > ul > li a {
+  transition: 0.5s;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.header .top-nav .menu .main-nav > ul > li > ul > li a:hover {
+  padding-right: 10px;
+}
+.header .top-nav .menu .main-nav > ul > li > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+.header .top-nav .menu .main-nav > ul > li > ul > li > ul {
+  z-index: 1001;
+  position: absolute;
+  width: 250px;
+  border-radius: 5px;
+  padding: 5px 0px;
+  transition: 0.7s;
+  right: 243px;
+  top: 25px;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 1px 1px 10px black;
+  background-color: #994df7;
+}
+.header .top-nav .menu .main-nav > ul > li > ul > li > ul li {
+  list-style-type: none;
+  transition: 0.5s;
+  padding: 7px;
+  position: relative;
+  margin: 5px 10px;
+}
+.header .top-nav .menu .main-nav > ul > li > ul > li > ul li:first-child, .header .top-nav .menu .main-nav > ul > li > ul > li > ul li:last-child {
+  margin: 0 10px;
+}
+.header .top-nav .menu .main-nav > ul > li > ul > li > ul li::after {
+  background-color: #ffffff;
+  width: 0%;
+  margin-top: 2px;
+  height: 3px;
+  border-radius: 10px;
+  content: "";
+  transition: 0.5s;
+  display: block;
+}
+.header .top-nav .menu .main-nav > ul > li > ul > li > ul li:hover::after {
+  display: block;
+  width: 10%;
+}
+.header .top-nav .menu .main-nav > ul > li > ul > li > ul li a {
+  transition: 0.5s;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.header .top-nav .menu .main-nav > ul > li > ul > li > ul li a:hover {
+  padding-right: 10px;
+}
+.header .top-nav .menu .main-nav > ul > li > a {
+  font-size: 20px;
+  color: #994df7;
+  text-decoration: none;
+  transition: 0.5s;
+  padding: 8px 16px;
+  display: block;
+  border-radius: 10px;
+}
+.header .top-nav .menu .main-nav > ul > li > a:hover {
+  background-color: #994df7;
+  color: #fff;
+}
+.header .top-nav .menu .main-nav > ul > li > a i {
+  margin-left: 5px;
+  font-size: 18px;
+}
+.header .top-nav .information-head {
+  display: flex;
+  justify-content: center;
+}
+.header .top-nav .information-head div {
+  float: left;
+  margin-left: 10px;
+}
+.header .top-nav .information-head .information .minicart {
+  display: flex;
+  align-items: center;
+}
+.header .top-nav .information-head .information .minicart a {
+  display: block;
+  padding: 10px 16px;
+  border: 2px solid #994df7;
+  transition: 0.5s;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #994df7;
+  font-size: 16px;
+}
+.header .top-nav .information-head .information .minicart a span i {
+  font-size: 18px;
+}
+.header .top-nav .information-head .information .minicart a span.number {
+  padding: 2px 10px;
+  border-radius: 50%;
+  background-color: #444;
+}
+.header .top-nav .information-head .information .minicart a:hover {
+  color: white;
+  background-color: #994df7;
+}
+.header .continue-head {
+  width: 100%;
+  margin-top: 150px;
+}
+.header .continue-head .div-form {
+  padding: 80px 25px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  background-color: rgba(68, 68, 68, 0.5);
+}
+.header .continue-head .div-form .title-form {
+  margin-bottom: 20px;
+}
+.header .continue-head .div-form .title-form h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+}
+.header .continue-head .div-form .search-form {
+  padding: 0px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.header .continue-head .div-form .search-form input[type=search] {
+  width: 90%;
+  outline: none;
+  padding: 20px;
+  background-color: #994df7;
+  color: #ffffff;
+  font-family: "iransans";
+  font-size: 18px;
+}
+.header .continue-head .div-form .search-form ::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #fff;
+  font-size: 16px;
+}
+.header .continue-head .div-form .search-form :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 1;
+  font-size: 16px;
+}
+.header .continue-head .div-form .search-form ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+  font-size: 16px;
+}
+.header .continue-head .div-form .search-form :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+  font-size: 16px;
+}
+.header .continue-head .div-form .search-form ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+  font-size: 16px;
+}
+.header .continue-head .div-form .search-form ::placeholder {
+  /* Most modern browsers support this now. */
+  color: #fff;
+  font-size: 16px;
+}
+.header .continue-head .div-form .search-form button {
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  background-color: #444;
+  transition: 0.5s;
+  font-size: 20px;
+}
+.header .continue-head .div-form .search-form button:hover {
+  background-color: #994df7;
+  padding-left: 20px;
+}
+.header .continue-head .div-form .search-form button i {
+  transition: 0.5s;
+  color: white;
+}
+.header .continue-head .div-form .site-information {
+  margin-top: 30px;
+}
+.header .continue-head .div-form .site-information .information > div {
+  border-radius: 10px;
+  transition: 0.5s;
+  padding: 10px 5px;
+}
+.header .continue-head .div-form .site-information .information > div:hover {
+  box-shadow: 1px 1px 10px #1d1d1d;
+}
+.header .continue-head .div-form .site-information .information .users {
+  text-align: center;
+}
+.header .continue-head .div-form .site-information .information .users .icon-information {
+  display: block;
+  margin-bottom: 10px;
+}
+.header .continue-head .div-form .site-information .information .users .icon-information i {
+  font-size: 45px;
+  transition: 0.5s;
+  color: #fff;
+}
+.header .continue-head .div-form .site-information .information .users span {
+  color: white;
+  font-size: 18px;
+}
+.header .continue-head .div-form .site-information .information .users span.short-code {
+  font-size: 22px;
+}
+
+.main {
+  margin-top: 40px;
+}
+.main .new-products, .main .top-products, .main .posts {
+  width: 100%;
+}
+.main .new-products .head, .main .top-products .head, .main .posts .head {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #994df7;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .new-products .head .title h2, .main .top-products .head .title h2, .main .posts .head .title h2 {
+  margin: 0px;
+  font-size: 26px;
+  color: #222;
+}
+.main .new-products .head .all a, .main .top-products .head .all a, .main .posts .head .all a {
+  display: block;
+  padding: 10px 14px;
+  transition: 0.5s;
+  color: #333;
+  border: 2px solid #994df7;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.main .new-products .head .all a:hover, .main .top-products .head .all a:hover, .main .posts .head .all a:hover {
+  padding: 10px 30px;
+  background-color: #994df7;
+  color: white;
+}
+.main .new-products .content .products, .main .new-products .content .my-posts, .main .top-products .content .products, .main .top-products .content .my-posts, .main .posts .content .products, .main .posts .content .my-posts {
+  flex-flow: row wrap;
+}
+.main .new-products .content .products .product, .main .new-products .content .products .post, .main .new-products .content .my-posts .product, .main .new-products .content .my-posts .post, .main .top-products .content .products .product, .main .top-products .content .products .post, .main .top-products .content .my-posts .product, .main .top-products .content .my-posts .post, .main .posts .content .products .product, .main .posts .content .products .post, .main .posts .content .my-posts .product, .main .posts .content .my-posts .post {
+  margin: 10px;
+  width: calc(33% - 20px);
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  padding-bottom: 30px;
+}
+.main .new-products .content .products .product:hover, .main .new-products .content .products .post:hover, .main .new-products .content .my-posts .product:hover, .main .new-products .content .my-posts .post:hover, .main .top-products .content .products .product:hover, .main .top-products .content .products .post:hover, .main .top-products .content .my-posts .product:hover, .main .top-products .content .my-posts .post:hover, .main .posts .content .products .product:hover, .main .posts .content .products .post:hover, .main .posts .content .my-posts .product:hover, .main .posts .content .my-posts .post:hover {
+  box-shadow: 1px 1px 5px #ececec;
+}
+.main .new-products .content .products .product:hover .add-to-mini-cart, .main .new-products .content .products .post:hover .add-to-mini-cart, .main .new-products .content .my-posts .product:hover .add-to-mini-cart, .main .new-products .content .my-posts .post:hover .add-to-mini-cart, .main .top-products .content .products .product:hover .add-to-mini-cart, .main .top-products .content .products .post:hover .add-to-mini-cart, .main .top-products .content .my-posts .product:hover .add-to-mini-cart, .main .top-products .content .my-posts .post:hover .add-to-mini-cart, .main .posts .content .products .product:hover .add-to-mini-cart, .main .posts .content .products .post:hover .add-to-mini-cart, .main .posts .content .my-posts .product:hover .add-to-mini-cart, .main .posts .content .my-posts .post:hover .add-to-mini-cart {
+  bottom: 22px;
+}
+.main .new-products .content .products .product:hover .image a figure img, .main .new-products .content .products .post:hover .image a figure img, .main .new-products .content .my-posts .product:hover .image a figure img, .main .new-products .content .my-posts .post:hover .image a figure img, .main .top-products .content .products .product:hover .image a figure img, .main .top-products .content .products .post:hover .image a figure img, .main .top-products .content .my-posts .product:hover .image a figure img, .main .top-products .content .my-posts .post:hover .image a figure img, .main .posts .content .products .product:hover .image a figure img, .main .posts .content .products .post:hover .image a figure img, .main .posts .content .my-posts .product:hover .image a figure img, .main .posts .content .my-posts .post:hover .image a figure img {
+  filter: blur(0px);
+}
+.main .new-products .content .products .product .image a figure, .main .new-products .content .products .post .image a figure, .main .new-products .content .my-posts .product .image a figure, .main .new-products .content .my-posts .post .image a figure, .main .top-products .content .products .product .image a figure, .main .top-products .content .products .post .image a figure, .main .top-products .content .my-posts .product .image a figure, .main .top-products .content .my-posts .post .image a figure, .main .posts .content .products .product .image a figure, .main .posts .content .products .post .image a figure, .main .posts .content .my-posts .product .image a figure, .main .posts .content .my-posts .post .image a figure {
+  width: 100%;
+  overflow: hidden;
+  margin: 0px;
+}
+.main .new-products .content .products .product .image a figure img, .main .new-products .content .products .post .image a figure img, .main .new-products .content .my-posts .product .image a figure img, .main .new-products .content .my-posts .post .image a figure img, .main .top-products .content .products .product .image a figure img, .main .top-products .content .products .post .image a figure img, .main .top-products .content .my-posts .product .image a figure img, .main .top-products .content .my-posts .post .image a figure img, .main .posts .content .products .product .image a figure img, .main .posts .content .products .post .image a figure img, .main .posts .content .my-posts .product .image a figure img, .main .posts .content .my-posts .post .image a figure img {
+  width: 100%;
+  transition: 0.5s;
+  filter: blur(2px);
+}
+.main .new-products .content .products .product .image a figure img:hover, .main .new-products .content .products .post .image a figure img:hover, .main .new-products .content .my-posts .product .image a figure img:hover, .main .new-products .content .my-posts .post .image a figure img:hover, .main .top-products .content .products .product .image a figure img:hover, .main .top-products .content .products .post .image a figure img:hover, .main .top-products .content .my-posts .product .image a figure img:hover, .main .top-products .content .my-posts .post .image a figure img:hover, .main .posts .content .products .product .image a figure img:hover, .main .posts .content .products .post .image a figure img:hover, .main .posts .content .my-posts .product .image a figure img:hover, .main .posts .content .my-posts .post .image a figure img:hover {
+  transform: scale(1.4);
+}
+.main .new-products .content .products .product .text, .main .new-products .content .products .post .text, .main .new-products .content .my-posts .product .text, .main .new-products .content .my-posts .post .text, .main .top-products .content .products .product .text, .main .top-products .content .products .post .text, .main .top-products .content .my-posts .product .text, .main .top-products .content .my-posts .post .text, .main .posts .content .products .product .text, .main .posts .content .products .post .text, .main .posts .content .my-posts .product .text, .main .posts .content .my-posts .post .text {
+  padding: 5px 10px;
+}
+.main .new-products .content .products .product .text .title, .main .new-products .content .products .post .text .title, .main .new-products .content .my-posts .product .text .title, .main .new-products .content .my-posts .post .text .title, .main .top-products .content .products .product .text .title, .main .top-products .content .products .post .text .title, .main .top-products .content .my-posts .product .text .title, .main .top-products .content .my-posts .post .text .title, .main .posts .content .products .product .text .title, .main .posts .content .products .post .text .title, .main .posts .content .my-posts .product .text .title, .main .posts .content .my-posts .post .text .title {
+  margin-top: 10px;
+}
+.main .new-products .content .products .product .text .title a, .main .new-products .content .products .post .text .title a, .main .new-products .content .my-posts .product .text .title a, .main .new-products .content .my-posts .post .text .title a, .main .top-products .content .products .product .text .title a, .main .top-products .content .products .post .text .title a, .main .top-products .content .my-posts .product .text .title a, .main .top-products .content .my-posts .post .text .title a, .main .posts .content .products .product .text .title a, .main .posts .content .products .post .text .title a, .main .posts .content .my-posts .product .text .title a, .main .posts .content .my-posts .post .text .title a {
+  text-decoration: none;
+}
+.main .new-products .content .products .product .text .title a h3, .main .new-products .content .products .post .text .title a h3, .main .new-products .content .my-posts .product .text .title a h3, .main .new-products .content .my-posts .post .text .title a h3, .main .top-products .content .products .product .text .title a h3, .main .top-products .content .products .post .text .title a h3, .main .top-products .content .my-posts .product .text .title a h3, .main .top-products .content .my-posts .post .text .title a h3, .main .posts .content .products .product .text .title a h3, .main .posts .content .products .post .text .title a h3, .main .posts .content .my-posts .product .text .title a h3, .main .posts .content .my-posts .post .text .title a h3 {
+  font-size: 22px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.main .new-products .content .products .product .text .exerpt, .main .new-products .content .products .post .text .exerpt, .main .new-products .content .my-posts .product .text .exerpt, .main .new-products .content .my-posts .post .text .exerpt, .main .top-products .content .products .product .text .exerpt, .main .top-products .content .products .post .text .exerpt, .main .top-products .content .my-posts .product .text .exerpt, .main .top-products .content .my-posts .post .text .exerpt, .main .posts .content .products .product .text .exerpt, .main .posts .content .products .post .text .exerpt, .main .posts .content .my-posts .product .text .exerpt, .main .posts .content .my-posts .post .text .exerpt {
+  font-size: 16px;
+  color: #444;
+  text-align: justify;
+}
+.main .new-products .content .products .product .information, .main .new-products .content .products .post .information, .main .new-products .content .my-posts .product .information, .main .new-products .content .my-posts .post .information, .main .top-products .content .products .product .information, .main .top-products .content .products .post .information, .main .top-products .content .my-posts .product .information, .main .top-products .content .my-posts .post .information, .main .posts .content .products .product .information, .main .posts .content .products .post .information, .main .posts .content .my-posts .product .information, .main .posts .content .my-posts .post .information {
+  padding: 10px 14px;
+  padding-top: 15px;
+  border-top: 1px solid #994df7;
+  justify-content: space-between;
+}
+.main .new-products .content .products .product .information .author span, .main .new-products .content .products .product .information .shows span, .main .new-products .content .products .post .information .author span, .main .new-products .content .products .post .information .shows span, .main .new-products .content .my-posts .product .information .author span, .main .new-products .content .my-posts .product .information .shows span, .main .new-products .content .my-posts .post .information .author span, .main .new-products .content .my-posts .post .information .shows span, .main .top-products .content .products .product .information .author span, .main .top-products .content .products .product .information .shows span, .main .top-products .content .products .post .information .author span, .main .top-products .content .products .post .information .shows span, .main .top-products .content .my-posts .product .information .author span, .main .top-products .content .my-posts .product .information .shows span, .main .top-products .content .my-posts .post .information .author span, .main .top-products .content .my-posts .post .information .shows span, .main .posts .content .products .product .information .author span, .main .posts .content .products .product .information .shows span, .main .posts .content .products .post .information .author span, .main .posts .content .products .post .information .shows span, .main .posts .content .my-posts .product .information .author span, .main .posts .content .my-posts .product .information .shows span, .main .posts .content .my-posts .post .information .author span, .main .posts .content .my-posts .post .information .shows span {
+  font-size: 16px;
+  color: #444;
+}
+.main .new-products .content .products .product .information .author span i, .main .new-products .content .products .product .information .shows span i, .main .new-products .content .products .post .information .author span i, .main .new-products .content .products .post .information .shows span i, .main .new-products .content .my-posts .product .information .author span i, .main .new-products .content .my-posts .product .information .shows span i, .main .new-products .content .my-posts .post .information .author span i, .main .new-products .content .my-posts .post .information .shows span i, .main .top-products .content .products .product .information .author span i, .main .top-products .content .products .product .information .shows span i, .main .top-products .content .products .post .information .author span i, .main .top-products .content .products .post .information .shows span i, .main .top-products .content .my-posts .product .information .author span i, .main .top-products .content .my-posts .product .information .shows span i, .main .top-products .content .my-posts .post .information .author span i, .main .top-products .content .my-posts .post .information .shows span i, .main .posts .content .products .product .information .author span i, .main .posts .content .products .product .information .shows span i, .main .posts .content .products .post .information .author span i, .main .posts .content .products .post .information .shows span i, .main .posts .content .my-posts .product .information .author span i, .main .posts .content .my-posts .product .information .shows span i, .main .posts .content .my-posts .post .information .author span i, .main .posts .content .my-posts .post .information .shows span i {
+  font-size: 20px;
+}
+.main .new-products .content .products .product .information .rate i, .main .new-products .content .products .post .information .rate i, .main .new-products .content .my-posts .product .information .rate i, .main .new-products .content .my-posts .post .information .rate i, .main .top-products .content .products .product .information .rate i, .main .top-products .content .products .post .information .rate i, .main .top-products .content .my-posts .product .information .rate i, .main .top-products .content .my-posts .post .information .rate i, .main .posts .content .products .product .information .rate i, .main .posts .content .products .post .information .rate i, .main .posts .content .my-posts .product .information .rate i, .main .posts .content .my-posts .post .information .rate i {
+  color: #e9c810;
+  font-size: 18px;
+}
+.main .new-products .content .products .product .price, .main .new-products .content .products .post .price, .main .new-products .content .my-posts .product .price, .main .new-products .content .my-posts .post .price, .main .top-products .content .products .product .price, .main .top-products .content .products .post .price, .main .top-products .content .my-posts .product .price, .main .top-products .content .my-posts .post .price, .main .posts .content .products .product .price, .main .posts .content .products .post .price, .main .posts .content .my-posts .product .price, .main .posts .content .my-posts .post .price {
+  margin-top: 10px;
+  text-align: center;
+}
+.main .new-products .content .products .product .price span, .main .new-products .content .products .post .price span, .main .new-products .content .my-posts .product .price span, .main .new-products .content .my-posts .post .price span, .main .top-products .content .products .product .price span, .main .top-products .content .products .post .price span, .main .top-products .content .my-posts .product .price span, .main .top-products .content .my-posts .post .price span, .main .posts .content .products .product .price span, .main .posts .content .products .post .price span, .main .posts .content .my-posts .product .price span, .main .posts .content .my-posts .post .price span {
+  padding: 10px 14px;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: #994df7;
+}
+.main .new-products .content .products .product .add-to-mini-cart, .main .new-products .content .products .post .add-to-mini-cart, .main .new-products .content .my-posts .product .add-to-mini-cart, .main .new-products .content .my-posts .post .add-to-mini-cart, .main .top-products .content .products .product .add-to-mini-cart, .main .top-products .content .products .post .add-to-mini-cart, .main .top-products .content .my-posts .product .add-to-mini-cart, .main .top-products .content .my-posts .post .add-to-mini-cart, .main .posts .content .products .product .add-to-mini-cart, .main .posts .content .products .post .add-to-mini-cart, .main .posts .content .my-posts .product .add-to-mini-cart, .main .posts .content .my-posts .post .add-to-mini-cart {
+  position: absolute;
+  bottom: -33px;
+  transition: 0.5s;
+  right: 97px;
+}
+.main .new-products .content .products .product .add-to-mini-cart a, .main .new-products .content .products .post .add-to-mini-cart a, .main .new-products .content .my-posts .product .add-to-mini-cart a, .main .new-products .content .my-posts .post .add-to-mini-cart a, .main .top-products .content .products .product .add-to-mini-cart a, .main .top-products .content .products .post .add-to-mini-cart a, .main .top-products .content .my-posts .product .add-to-mini-cart a, .main .top-products .content .my-posts .post .add-to-mini-cart a, .main .posts .content .products .product .add-to-mini-cart a, .main .posts .content .products .post .add-to-mini-cart a, .main .posts .content .my-posts .product .add-to-mini-cart a, .main .posts .content .my-posts .post .add-to-mini-cart a {
+  transition: 0.5s;
+  text-decoration: none;
+  font-size: 16px;
+  color: #444;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #eee;
+  display: block;
+}
+.main .new-products .content .products .product .add-to-mini-cart a:hover, .main .new-products .content .products .post .add-to-mini-cart a:hover, .main .new-products .content .my-posts .product .add-to-mini-cart a:hover, .main .new-products .content .my-posts .post .add-to-mini-cart a:hover, .main .top-products .content .products .product .add-to-mini-cart a:hover, .main .top-products .content .products .post .add-to-mini-cart a:hover, .main .top-products .content .my-posts .product .add-to-mini-cart a:hover, .main .top-products .content .my-posts .post .add-to-mini-cart a:hover, .main .posts .content .products .product .add-to-mini-cart a:hover, .main .posts .content .products .post .add-to-mini-cart a:hover, .main .posts .content .my-posts .product .add-to-mini-cart a:hover, .main .posts .content .my-posts .post .add-to-mini-cart a:hover {
+  background-color: #994df7;
+  color: white;
+}
+.main .new-products .content .products .product .continue, .main .new-products .content .products .post .continue, .main .new-products .content .my-posts .product .continue, .main .new-products .content .my-posts .post .continue, .main .top-products .content .products .product .continue, .main .top-products .content .products .post .continue, .main .top-products .content .my-posts .product .continue, .main .top-products .content .my-posts .post .continue, .main .posts .content .products .product .continue, .main .posts .content .products .post .continue, .main .posts .content .my-posts .product .continue, .main .posts .content .my-posts .post .continue {
+  margin-top: 10px;
+}
+.main .new-products .content .products .product .continue a, .main .new-products .content .products .post .continue a, .main .new-products .content .my-posts .product .continue a, .main .new-products .content .my-posts .post .continue a, .main .top-products .content .products .product .continue a, .main .top-products .content .products .post .continue a, .main .top-products .content .my-posts .product .continue a, .main .top-products .content .my-posts .post .continue a, .main .posts .content .products .product .continue a, .main .posts .content .products .post .continue a, .main .posts .content .my-posts .product .continue a, .main .posts .content .my-posts .post .continue a {
+  text-decoration: none;
+  text-align: center;
+  background-color: #444;
+  color: white;
+  transition: 0.5s;
+  display: block;
+  padding: 10px 16px;
+  font-size: 16px;
+}
+.main .new-products .content .products .product .continue a:hover, .main .new-products .content .products .post .continue a:hover, .main .new-products .content .my-posts .product .continue a:hover, .main .new-products .content .my-posts .post .continue a:hover, .main .top-products .content .products .product .continue a:hover, .main .top-products .content .products .post .continue a:hover, .main .top-products .content .my-posts .product .continue a:hover, .main .top-products .content .my-posts .post .continue a:hover, .main .posts .content .products .product .continue a:hover, .main .posts .content .products .post .continue a:hover, .main .posts .content .my-posts .product .continue a:hover, .main .posts .content .my-posts .post .continue a:hover {
+  background-color: #994df7;
+}
+.main .new-products .content .products .post, .main .new-products .content .my-posts .post, .main .top-products .content .products .post, .main .top-products .content .my-posts .post, .main .posts .content .products .post, .main .posts .content .my-posts .post {
+  padding-bottom: 0px;
+}
+.main .top-products .content {
+  margin-top: 20px;
+}
+.main .top-products .content .products {
+  direction: ltr;
+}
+.main .top-products .content .products .product {
+  direction: rtl;
+  width: 100% !important;
+  margin: 0px;
+}
+.main .top-products .content .products .product .add-to-mini-cart {
+  right: 105px;
+}
+.main .top-products .content .products .owl-theme .owl-dots .owl-dot span {
+  height: 6px !important;
+  width: 50px;
+}
+.main .top-products .content .products .owl-theme .owl-dots, .main .top-products .content .products .owl-theme .owl-nav {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.main .top-products .content .products .owl-theme .owl-dots .owl-dot.active span {
+  background: #555;
+}
+.main .top-products .content .products .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #994df7;
+}
+.main .top-products .content .products .owl-carousel .owl-nav button.owl-next, .main .top-products .content .products .owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  font-size: 100px;
+  bottom: 45%;
+  padding: 20px !important;
+  background: #fff;
+  box-shadow: 1px 1px 10px #ddd;
+  transition: 0.7s;
+  color: #666;
+  border-radius: 50%;
+  animation-name: navs;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+.main .top-products .content .products .owl-carousel .owl-nav button.owl-next:hover, .main .top-products .content .products .owl-carousel .owl-nav button.owl-prev:hover {
+  opacity: 0.9;
+  color: #994df7;
+}
+@keyframes navs {
+  from {
+    bottom: 43%;
+  }
+  to {
+    bottom: 45%;
+  }
+}
+.main .top-products .content .products .owl-carousel .owl-nav button.owl-next {
+  right: -5%;
+}
+.main .top-products .content .products .owl-carousel .owl-nav button.owl-prev {
+  left: -5%;
+}
+.main .text-and-image {
+  margin: 20px 0px;
+  padding: 10px 20px;
+  align-items: center;
+  background-color: white;
+}
+.main .text-and-image .text {
+  width: 50%;
+}
+.main .text-and-image .text h3 {
+  font-size: 22px;
+  color: #333;
+  margin: 20px 10px;
+}
+.main .text-and-image .text p {
+  font-size: 16px;
+  color: #555;
+  text-align: justify;
+}
+.main .text-and-image .image {
+  width: 50%;
+}
+.main .text-and-image .image figure {
+  width: 100%;
+  margin: 0;
+}
+.main .text-and-image .image figure img {
+  width: 100%;
+}
+.main .post-and-sidebar {
+  flex-flow: row wrap;
+}
+.main .post-and-sidebar .my-page {
+  width: 100% !important;
+}
+.main .post-and-sidebar .post {
+  width: calc(70% - 10px);
+  margin-left: 10px;
+}
+.main .post-and-sidebar .post .information-single-post {
+  display: flex;
+  justify-content: center;
+}
+.main .post-and-sidebar .post .information-single-post, .main .post-and-sidebar .post .title {
+  background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 10px #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+}
+.main .post-and-sidebar .post .information-single-post div, .main .post-and-sidebar .post .title div {
+  margin-left: 5px;
+  float: right;
+  border-left: 2px solid #ddd;
+  padding-left: 5px;
+}
+.main .post-and-sidebar .post .information-single-post div:last-child, .main .post-and-sidebar .post .title div:last-child {
+  border: none;
+}
+.main .post-and-sidebar .post .information-single-post div span, .main .post-and-sidebar .post .title div span {
+  font-size: 16px;
+}
+.main .post-and-sidebar .post .information-single-post div span i, .main .post-and-sidebar .post .title div span i {
+  font-size: 20px;
+}
+.main .post-and-sidebar .post .title {
+  font-size: 22px;
+  color: #333;
+  text-align: center;
+}
+.main .post-and-sidebar .post .title h2 {
+  margin: 0px;
+}
+.main .post-and-sidebar .post .single-article {
+  background-color: white;
+  min-height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main .post-and-sidebar .post .single-article .image {
+  margin-bottom: 10px;
+}
+.main .post-and-sidebar .post .single-article .image figure {
+  width: 100%;
+  margin: 0px;
+}
+.main .post-and-sidebar .post .single-article .image figure img {
+  width: 100%;
+}
+.main .post-and-sidebar .post .single-article .content {
+  padding: 10px 16px;
+}
+.main .post-and-sidebar .post .single-article .content p {
+  font-size: 17px;
+  color: #444;
+  text-align: justify;
+}
+.main .post-and-sidebar .post .single-article .tags {
+  margin: 10px 5px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+.main .post-and-sidebar .post .single-article .tags span {
+  font-size: 18px;
+}
+.main .post-and-sidebar .post .single-article .tags a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #444;
+  color: white;
+  transition: 0.5s;
+  border-radius: 20px;
+  margin-left: 5px;
+}
+.main .post-and-sidebar .post .single-article .tags a:hover {
+  background-color: #994df7;
+}
+.main .post-and-sidebar .post .archive-article .arhive-posts {
+  flex-flow: row wrap;
+}
+.main .post-and-sidebar .post .archive-article .arhive-posts .archive-post {
+  width: calc(33.33333% - 20px);
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+.main .post-and-sidebar .post .archive-article .arhive-posts .archive-post:hover .image figure img {
+  filter: blur(0px);
+}
+.main .post-and-sidebar .post .archive-article .arhive-posts .archive-post .image figure {
+  margin: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+.main .post-and-sidebar .post .archive-article .arhive-posts .archive-post .image figure img {
+  width: 100%;
+  transition: 0.5s;
+  filter: blur(1px);
+}
+.main .post-and-sidebar .post .archive-article .arhive-posts .archive-post .image figure img:hover {
+  transform: scale(1.4);
+}
+.main .post-and-sidebar .post .archive-article .arhive-posts .archive-post .text {
+  padding: 10px;
+}
+.main .post-and-sidebar .post .archive-article .arhive-posts .archive-post .text .title-archive {
+  margin-bottom: 10px;
+}
+.main .post-and-sidebar .post .archive-article .arhive-posts .archive-post .text .title-archive a {
+  text-decoration: none;
+}
+.main .post-and-sidebar .post .archive-article .arhive-posts .archive-post .text .title-archive a h3 {
+  font-size: 22px;
+  color: #444;
+}
+.main .post-and-sidebar .post .archive-article .arhive-posts .archive-post .text .exerpt p {
+  text-align: justify;
+  font-size: 16px;
+}
+.main .post-and-sidebar .post .archive-article .arhive-posts .archive-post .continue a {
+  display: block;
+  transition: 0.5s;
+  padding: 10px 16px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #444;
+  text-decoration: none;
+  color: white;
+}
+.main .post-and-sidebar .post .archive-article .arhive-posts .archive-post .continue a:hover {
+  background-color: #994df7;
+}
+.main .post-and-sidebar .post .related-posts {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.main .post-and-sidebar .post .related-posts .head {
+  margin-bottom: 10px;
+}
+.main .post-and-sidebar .post .related-posts .head h2 {
+  font-size: 22px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  margin: 0px;
+}
+.main .post-and-sidebar .post .related-posts .content {
+  direction: ltr;
+}
+.main .post-and-sidebar .post .related-posts .content .related-post {
+  direction: rtl;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+.main .post-and-sidebar .post .related-posts .content .related-post:hover .image figure img {
+  filter: blur(0px);
+}
+.main .post-and-sidebar .post .related-posts .content .related-post .image figure {
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
+}
+.main .post-and-sidebar .post .related-posts .content .related-post .image figure img {
+  width: 100%;
+  transition: 0.5s;
+  filter: blur(1px);
+}
+.main .post-and-sidebar .post .related-posts .content .related-post .image figure img:hover {
+  transform: scale(1.4);
+}
+.main .post-and-sidebar .post .related-posts .content .related-post .text .onvan {
+  margin: 10px 5px;
+}
+.main .post-and-sidebar .post .related-posts .content .related-post .text .onvan a {
+  text-decoration: none;
+}
+.main .post-and-sidebar .post .related-posts .content .related-post .text .onvan a h3 {
+  font-size: 22px;
+  color: #333;
+}
+.main .post-and-sidebar .post .related-posts .content .related-post .text .exerpt {
+  padding: 0px 5px;
+}
+.main .post-and-sidebar .post .related-posts .content .related-post .text .exerpt p {
+  font-size: 16px;
+  text-align: justify;
+  font-size: 16px;
+  color: #444;
+}
+.main .post-and-sidebar .post .related-posts .content .related-post .continue a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 16px;
+  font-size: 16px;
+  color: white;
+  background-color: #444;
+  transition: 0.5s;
+  text-align: center;
+}
+.main .post-and-sidebar .post .related-posts .content .related-post .continue a:hover {
+  background-color: #994df7;
+}
+.main .post-and-sidebar .post .related-posts .content .owl-theme .owl-dots .owl-dot span {
+  height: 6px !important;
+  width: 50px;
+}
+.main .post-and-sidebar .post .related-posts .content .owl-theme .owl-dots, .main .post-and-sidebar .post .related-posts .content .owl-theme .owl-nav {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.main .post-and-sidebar .post .related-posts .content .owl-theme .owl-dots .owl-dot.active span {
+  background: #555;
+}
+.main .post-and-sidebar .post .related-posts .content .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #994df7;
+}
+.main .post-and-sidebar .post .related-posts .content .owl-carousel .owl-nav button.owl-next, .main .post-and-sidebar .post .related-posts .content .owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  font-size: 100px;
+  bottom: 45%;
+  padding: 20px !important;
+  background: #fff;
+  box-shadow: 1px 1px 10px #ddd;
+  transition: 0.7s;
+  color: #666;
+  border-radius: 50%;
+  animation-name: navs;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+.main .post-and-sidebar .post .related-posts .content .owl-carousel .owl-nav button.owl-next:hover, .main .post-and-sidebar .post .related-posts .content .owl-carousel .owl-nav button.owl-prev:hover {
+  opacity: 0.9;
+  color: #994df7;
+}
+@keyframes navs {
+  from {
+    bottom: 43%;
+  }
+  to {
+    bottom: 45%;
+  }
+}
+.main .post-and-sidebar .post .related-posts .content .owl-carousel .owl-nav button.owl-next {
+  right: -5%;
+}
+.main .post-and-sidebar .post .related-posts .content .owl-carousel .owl-nav button.owl-prev {
+  left: -5%;
+}
+.main .post-and-sidebar .sidebar {
+  width: calc(30% - 10px);
+  margin-right: 10px;
+}
+.main .post-and-sidebar .sidebar .my-sidebar {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.main .post-and-sidebar .sidebar .my-sidebar figure {
+  width: 100%;
+  margin: 0px;
+}
+.main .post-and-sidebar .sidebar .my-sidebar figure img {
+  width: 100%;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .head {
+  padding: 15px;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .head h2 {
+  padding-bottom: 10px;
+  font-size: 22px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0px;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content {
+  padding: 0px 15px;
+  padding-bottom: 10px;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content ul {
+  padding: 0px;
+  margin: 0px;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content ul li {
+  list-style-type: none;
+  margin: 10px 0px;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content ul li:first-child {
+  margin: 0px;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content ul li::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: #994df7;
+  width: 0%;
+  margin: 2px 0px;
+  transition: 0.3s;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content ul li:hover::after {
+  width: 10%;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content ul li a {
+  transition: 0.5s;
+  text-decoration: none;
+  font-size: 16px;
+  color: #444;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content ul li a:hover {
+  padding-right: 10px;
+  color: #994df7;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content .my-carousel {
+  direction: ltr;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content .my-carousel .my-slider {
+  direction: rtl;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content .my-carousel .my-slider .image {
+  margin-bottom: 10px;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content .my-carousel .my-slider .image figure {
+  margin: 0px;
+  width: 100%;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content .my-carousel .my-slider .image figure img {
+  width: 100%;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content .my-carousel .my-slider .title-product a {
+  text-decoration: none;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content .my-carousel .my-slider .title-product a h3 {
+  text-align: center;
+  padding: 10px;
+  color: #444;
+  font-size: 22px;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content .my-carousel .my-slider .price-slider {
+  text-align: center;
+  margin: 20px;
+}
+.main .post-and-sidebar .sidebar .my-sidebar .content .my-carousel .my-slider .price-slider span {
+  font-size: 16px;
+  background-color: #994df7;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.main .error-404 .texts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.main .error-404 .texts .title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main .error-404 .texts .title h1 {
+  margin: 0px;
+  font-size: 26px;
+}
+.main .error-404 .texts .back {
+  width: 100%;
+  text-align: center;
+}
+.main .error-404 .texts .back a {
+  display: inline-block;
+  padding: 12px;
+  background-color: #444;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.main .error-404 .texts .back a:hover {
+  padding: 12px 24px;
+  background-color: #994df7;
+}
+.main .error-404 .image figure {
+  margin: 0px;
+  width: 100%;
+}
+.main .error-404 .image figure img {
+  width: 100%;
+}
+
+.footer {
+  min-height: 400px;
+  overflow: hidden;
+  background-color: white;
+  margin-top: 20px;
+  background-size: 100% 200px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #444444;
+}
+.footer .footers {
+  margin: 0;
+  padding: 20px 15px;
+}
+.footer .footers > div {
+  margin: 5px 0px;
+}
+.footer .footers .about .head, .footer .footers .foot-nav .head, .footer .footers .about-me .head, .footer .footers .trust .head {
+  margin-bottom: 10px;
+}
+.footer .footers .about .head h3, .footer .footers .foot-nav .head h3, .footer .footers .about-me .head h3, .footer .footers .trust .head h3 {
+  border-bottom: 1px solid #994df7;
+  padding-bottom: 10px;
+  font-size: 22px;
+  color: #fff;
+}
+.footer .footers .about .content p, .footer .footers .foot-nav .content p, .footer .footers .about-me .content p, .footer .footers .trust .content p {
+  font-size: 16px;
+  color: #f1f1f1;
+  text-align: justify;
+}
+.footer .footers .about .content ul, .footer .footers .foot-nav .content ul, .footer .footers .about-me .content ul, .footer .footers .trust .content ul {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0px;
+  padding: 10px;
+  justify-content: center;
+}
+.footer .footers .about .content ul li, .footer .footers .foot-nav .content ul li, .footer .footers .about-me .content ul li, .footer .footers .trust .content ul li {
+  width: calc(33% - 10px);
+  margin: 5px 5px;
+  text-align: center;
+  transition: 0.5s;
+  border-radius: 5px;
+  background-color: #fff;
+  list-style-type: none;
+}
+.footer .footers .about .content ul li:hover, .footer .footers .foot-nav .content ul li:hover, .footer .footers .about-me .content ul li:hover, .footer .footers .trust .content ul li:hover {
+  background-color: #994df7;
+}
+.footer .footers .about .content ul li:hover a, .footer .footers .foot-nav .content ul li:hover a, .footer .footers .about-me .content ul li:hover a, .footer .footers .trust .content ul li:hover a {
+  color: white;
+}
+.footer .footers .about .content ul li a, .footer .footers .foot-nav .content ul li a, .footer .footers .about-me .content ul li a, .footer .footers .trust .content ul li a {
+  padding: 10px 0px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  color: #444;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.5s;
+}
+.footer .footers .about .content .images .image figure, .footer .footers .foot-nav .content .images .image figure, .footer .footers .about-me .content .images .image figure, .footer .footers .trust .content .images .image figure {
+  width: 100%;
+  margin: 0px;
+}
+.footer .footers .about .content .images .image figure img, .footer .footers .foot-nav .content .images .image figure img, .footer .footers .about-me .content .images .image figure img, .footer .footers .trust .content .images .image figure img {
+  width: 100%;
+}
+.footer .footers .social-media .head {
+  margin-bottom: 10px;
+}
+.footer .footers .social-media .head h3 {
+  border-bottom: 1px solid #994df7;
+  padding-bottom: 10px;
+  color: #fff;
+  font-size: 22px;
+}
+.footer .footers .social-media .content ul {
+  padding: 10px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer .footers .social-media .content ul li {
+  list-style-type: none;
+}
+.footer .footers .social-media .content ul li a {
+  text-decoration: none;
+  border-radius: 50%;
+  overflow: hidden;
+  color: #fff;
+  transition: 0.5s;
+}
+.footer .footers .social-media .content ul li a.tele:hover {
+  color: #48aed6;
+}
+.footer .footers .social-media .content ul li a.inst:hover {
+  color: #d648c3;
+}
+.footer .footers .social-media .content ul li a.goog:hover {
+  color: #b8b526;
+}
+.footer .footers .social-media .content ul li a.yout:hover {
+  color: #da2a2a;
+}
+.footer .footers .social-media .content ul li a.yoas:hover {
+  color: #6633c5;
+}
+.footer .footers .social-media .content ul li a.twit:hover {
+  color: #48aed6;
+}
+.footer .footers .social-media .content ul li a i {
+  font-size: 26px;
+}
+.footer .copy-right p {
+  margin: 20px 0;
+  font-size: 18px;
+  color: #f1f1f1;
+  padding-right: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
